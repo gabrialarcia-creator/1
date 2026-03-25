@@ -1,5 +1,3 @@
-[bund_treasuries_pro (4).html](https://github.com/user-attachments/files/26251351/bund_treasuries_pro.4.html)
-<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -38,11 +36,59 @@ body{font-family:'Syne',sans-serif;background:var(--bg);color:var(--white);overf
 
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 96px;height:64px;background:rgba(255,255,255,.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);box-shadow:0 1px 12px rgba(0,0,0,.06)}
 .nav-logo{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--gold);font-weight:700;letter-spacing:.2em;text-transform:uppercase}
-.nav-items{display:flex;gap:0;list-style:none}
-.nav-items a{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#000;font-weight:700;text-decoration:none;padding:8px 16px;transition:color .2s;position:relative}
-.nav-items a::after{content:'';position:absolute;bottom:0;left:16px;right:16px;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .2s}
-.nav-items a:hover{color:var(--gold)}
-.nav-items a:hover::after{transform:scaleX(1)}
+.nav-items{
+  display:flex;
+  align-items:center;
+  gap:4px;
+  list-style:none;
+}
+
+.nav-items li{
+  display:flex;
+  align-items:center;
+}
+
+.nav-items a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-family:'JetBrains Mono', monospace;
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+
+  color:#000;
+  font-weight:600;
+  text-decoration:none;
+
+  padding:8px 14px;
+  line-height:1;
+  height:32px;
+  white-space:nowrap;
+
+  position:relative;
+}
+
+.nav-items a::after{
+  content:'';
+  position:absolute;
+  bottom:4px;
+  left:14px;
+  right:14px;
+  height:1px;
+  background:var(--gold);
+  transform:scaleX(0);
+  transition:transform .2s;
+}
+
+.nav-items a:hover{
+  color:var(--gold);
+}
+
+.nav-items a:hover::after{
+  transform:scaleX(1);
+}
 .nav-cta{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;color:var(--gold);border:1px solid rgba(201,168,76,.4);padding:8px 20px;text-transform:uppercase;cursor:none;display:flex;align-items:center;gap:8px;background:rgba(201,168,76,.05)}
 .nav-cta .bme-icon{width:18px;height:18px;background:var(--gold);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:9px;color:var(--bg);font-weight:800;font-family:'Syne',sans-serif;flex-shrink:0}
 
